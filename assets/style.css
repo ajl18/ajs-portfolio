@@ -78,14 +78,21 @@ header nav ul li a:hover {
 .hero {
   background-image: url("../assets/images/bw-bk-bridge.jpg");
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   align-items: flex-start;
   background-attachment: fixed;
   background-position: 80%;
   opacity: 1 ;
-}
+  margin: 0 auto;
+  }
+
+  .hero-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
 .hero-cta {
   width: 20%;
   text-align: right;
@@ -93,7 +100,6 @@ header nav ul li a:hover {
   color: var(--secondary-color);
   font-size: 18px;
   line-height: 1.2;
-
 }
 
 .hero-cta h2 {
@@ -110,13 +116,21 @@ header nav ul li a:hover {
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
+.headshot {
+  width: 22%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+
+
+}
 
 .headshot img{
   border: 3px var(--secondary-color);
   background-color: var(--primary-color);
   padding: 20px;
   color: var(--secondary-color);
-  width: 30%;
+  width: 100%;
   margin: 3.5%;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -133,14 +147,12 @@ header nav ul li a:hover {
 }
 
 #about-aj div {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  display: absolute;
 }
 
 #about-aj h2 {
-  border-bottom: var(--secondary-color);
-  margin: 20px auto;
+  border-bottom: 4px solid var(--secondary-color);
+  margin: 20px 500px;
   padding-bottom: 10px;
   color: var(--secondary-color);
   font-style: bold;
@@ -150,8 +162,9 @@ header nav ul li a:hover {
   justify-content: space-around;
   list-style: none;
   padding: 10px;
-  width: 30%;
   text-shadow: 0 0 5px rgba(0, 0,0, 0.2);
+  text-align: center;
+  margin: 0 300px;
 
 }
 
@@ -161,11 +174,11 @@ header nav ul li a:hover {
   background-color: var(--primary-color);
   padding: 20px;
   color: var(--secondary-color);
-  width: 20%;
   margin: 3.5%;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   opacity: 1;
+  width: 300px;
 }
 
 
@@ -179,9 +192,10 @@ header nav ul li a:hover {
 }
 
 #portfolio h2 {
-  border-bottom: var(--secondary-color);
-  margin: 20px auto;
+  border-bottom: 4px solid var(--secondary-color);
+  margin: 20px 500px;
   padding-bottom: 10px;
+  padding-top: 10px;
   color: var(--secondary-color);
   font-style: bold;
 }
@@ -190,27 +204,33 @@ header nav ul li a:hover {
   margin: 10px auto;
   padding-bottom: 5px;
   font-style: bold;
+  color: var(--fourth-color);
   
 }
 
-#portfolio a {
-  color: var(--fourth-color);
-  font-style: bold;
+.portfolio-links {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 20px auto;
 }
 
-#portfolio a:hover {
-  background: var(--secondary-color);
-  color: var(--tertiary-color);
-  border-radius: 35px;
-  text-shadow: none;
+.portfolio-rb img {
+  width: 40%;
+  border: 5px solid var(--secondary-color); 
 }
 
-#portfolio ol {
-  justify-content: space-around;
-  list-style: none;
-  padding: 10px;
-  width: 70%;
+.portfolio-refactor img {
+  width: 40%;
+  border: 5px solid var(--secondary-color); 
 }
+
+#portfolio p {
+  font-size: 20px;
+  margin: 0 300px 10px 300px;
+
+}
+
 
 /* Style Contact Info */
 #contact-info {
@@ -221,8 +241,8 @@ header nav ul li a:hover {
 }
 
 #contact-info h2 {
-  border-bottom: var(--secondary-color);
-  margin: 20px auto;
+  border-bottom: 4px solid var(--secondary-color);
+  margin: 20px 500px;
   padding-bottom: 10px;
   color: var(--secondary-color);
   font-style: bold;
@@ -240,7 +260,6 @@ header nav ul li a:hover {
   justify-content: space-around;
   list-style: none;
   padding: 10px;
-  width: 70%;
 }
 
 #contact-info a {
